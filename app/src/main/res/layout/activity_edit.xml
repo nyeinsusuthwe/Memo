@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_app"
+    tools:context=".EditActivity">
+    <include layout="@layout/title_bar"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="What's your importance?"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginVertical="8dp"
+        android:textColorHint="@color/md_theme_onTertiaryFixedVariant"
+        app:boxStrokeColor="@color/design_default_color_primary_variant"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_importance"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="30dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contact Number"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginVertical="8dp"
+        android:textColorHint="@color/md_theme_onTertiaryFixedVariant"
+        app:boxStrokeColor="@color/design_default_color_primary_variant"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_contact"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="30dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bt_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="Pick your Date"
+            android:backgroundTint="@color/md_theme_tertiary"
+            android:textColor="@color/md_theme_onTertiary"
+            app:cornerRadius="8dp"
+            android:textSize="15sp"
+            android:layout_marginEnd="3dp"
+            />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bt_cancle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancle"
+            android:backgroundTint="@color/md_theme_errorContainer_mediumContrast"
+            android:textColor="@color/md_theme_onErrorContainer_mediumContrast"
+            app:cornerRadius="8dp"
+            android:textSize="16sp"
+            android:layout_marginHorizontal="3dp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bt_save"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Save"
+            android:backgroundTint="@color/md_theme_tertiaryContainer_highContrast"
+            android:textColor="@color/md_theme_onTertiaryContainer_highContrast"
+            app:cornerRadius="8dp"
+            android:textSize="16sp"
+            android:layout_marginStart="3dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
